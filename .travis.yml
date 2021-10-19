@@ -10,6 +10,6 @@ addons:
   sonarcloud:
     organization: "aleondb"
 script:
-  - pytest -v -cov --cov-report=xml --cov-report=html
+  - pytest -v --cov --cov-report=xml --cov-report=html
   - behave ./test_aceptance/
   - sonar-scanner
